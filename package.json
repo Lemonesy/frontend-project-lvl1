@@ -19,12 +19,15 @@
   "homepage": "https://github.com/Lemonesy/frontend-project-lvl1#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
+
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "make": "^0.8.1",
+    "mathjs": "^11.0.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
