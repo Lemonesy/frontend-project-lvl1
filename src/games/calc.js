@@ -18,8 +18,8 @@ const calculatedExpression = (numberOne, numberTwo, operator) => {
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
-  const numberOne = getRandomInt(50);
-  const numberTwo = getRandomInt(50);
+  const numberOne = getRandomInt(1, 50);
+  const numberTwo = getRandomInt(1, 50);
   const operator = operators[getRandomInt(2)];
   const userQuestion = `${numberOne} ${operator} ${numberTwo}`;
   const rightAnswer = String(calculatedExpression(numberOne, numberTwo, operator));

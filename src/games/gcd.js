@@ -17,8 +17,8 @@ const getDivisor = (numberOne, numberTwo) => {
 };
 
 const generateRound = () => {
-  const numberOne = getRandomInt(50);
-  const numberTwo = getRandomInt(50);
+  const numberOne = getRandomInt(1, 50);
+  const numberTwo = getRandomInt(1, 50);
   const userQuestion = `${numberOne} ${numberTwo}`;
   const rightAnswer = String(getDivisor(numberOne, numberTwo));
   return [userQuestion, rightAnswer];
