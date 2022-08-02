@@ -8,24 +8,22 @@ const startGame = (gameDescription, generateRound) => {
   console.log(`Hello, ${userName}!`);
   console.log(gameDescription);
 
-
-for (let i = 0; i < maxRoundCount; i += 1) {
-  const [userQuestion, rightAnswer] = generateRound();
-  console.log(userQuestion);
-  const answerUser = readlineSync.question('Your answer: ');
-  if (rightAnswer === answerUser) {
-    console.log('Correct!');
+  for (let i = 0; i < maxRoundCount; i += 1) {
+    const [userQuestion, rightAnswer] = generateRound();
+    console.log(userQuestion);
+    const answerUser = readlineSync.question('Your answer: ');
+    if (rightAnswer === answerUser) {
+      console.log('Correct!');
+    } else {
+      console.log(`"${answerUser}" is wrong answer ;(. Correct answer was ${rightAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
   }
-  else {
-    console.log(`"${answerUser}" is wrong answer ;(. Correct answer was ${rightAnswer}.`);
-     console.log(`Let's try again, ${userName}!`);
-     return
-  }
-}
   console.log(`Congratulations, ${userName}!`);
 };
 
 export {
   startGame,
-  maxRoundCount
+  maxRoundCount,
 };
