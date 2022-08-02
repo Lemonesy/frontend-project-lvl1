@@ -12,7 +12,7 @@ const calculatedExpression = (numberOne, numberTwo, operator) => {
     case '*':
       return (numberOne * numberTwo);
     default:
-      console.log(`Unknown operator: '${operator}'!`);
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 
