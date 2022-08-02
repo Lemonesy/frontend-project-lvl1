@@ -13,7 +13,7 @@ const makeProgression = (startProgression, progressionLength, step) => {
 
 const generateRound = () => {
   const startProgression = getRandomInt(1, 9);
-  const progressionLength = getRandomInt(3, 12);
+  const progressionLength = getRandomInt(5, 12);
   const step = getRandomInt(1, 10);
   const currentProgression = makeProgression(startProgression, progressionLength, step);
   const hidden = getRandomInt(1, currentProgression.length - 1);
