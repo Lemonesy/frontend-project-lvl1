@@ -10,7 +10,7 @@ const startGame = (gameDescription, generateRound) => {
 
   for (let i = 0; i < maxRoundCount; i += 1) {
     const [userQuestion, rightAnswer] = generateRound();
-    console.log(userQuestion);
+    console.log(`Question: ${userQuestion}`);
     const answerUser = readlineSync.question('Your answer: ');
     if (rightAnswer === answerUser) {
       console.log('Correct!');
