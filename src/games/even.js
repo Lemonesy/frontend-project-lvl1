@@ -2,9 +2,8 @@ import {startGame } from './index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export const getRandomInt = (max) => {
-  return Math.floor(Math.random() * max);
-};
+export const getRandomInt = (min, max) => Math.round(Math.random() * (max - min)) + min;
+
 
 
 const generateRound = () => {
